@@ -83,15 +83,8 @@ Abre los siguientes archivos HTML desde la carpeta `frontend` en tu navegador:
 - `PUT /solicitudes/{id}` → Cambiar estado
 
 ---
-
-## Capturas y Video (opcional)
-
-Puedes incluir aquí un enlace a capturas de pantalla o video que muestre el funcionamiento.
-
----
-
 ## Autor
 
-**Tu nombre aquí**  
+*Mario Rivera*  
 Programación Orientada a Objetos – Universidad Don Bosco  
 Ciclo 01-2025
