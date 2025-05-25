@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adopción de Mascotas</title>
+</head>
+<body>
+    <h1>Bienvenido al sistema de adopción de mascotas</h1>
+    <ul id="mascotas"></ul>
+
+    <script>
+        fetch('http://localhost:8080/mascotas')
+            .then(res => res.json())
+            .then(data => {
+                const lista = document.getElementById('mascotas');
+                data.forEach(m => {
+                    const li = document.createElement('li');
+                    li.textContent = `${m.nombre} (${m.tipo}) - ${m.estado}`;
+                    lista.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>
